@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <title>Pet Care</title>
+
+        <!-- Expand Page Description Text Box When Button Clicked -->
+        <script>
+          function expand() {
+            document.getElementById("page-description1").style.height = "auto";
+            document.getElementById("petcare-expand").style.display = "none";
+            document.getElementById("petcare-contract").style.display = "block";
+          }
+        </script>
+        <!-- Contract Page Description Text Box When Button Clicked -->
+        <script>
+          function contract() {
+            document.getElementById("page-description1").style.height = "50vh";
+            document.getElementById("petcare-expand").style.display = "block";
+            document.getElementById("petcare-contract").style.display = "none";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>
+
+
+        <!-- Functionality For Tabbed Photo Gallery -->
+        <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg"); // Get the expanded image
+          //var imgText = document.getElementById("imgtext"); // Get the image text
+          expandImg.src = imgs.src; // Use the same src in the expanded image as the image being clicked on from the grid
+          // imgText.innerHTML = imgs.alt; // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          expandImg.parentElement.style.display = "block";// Show the container element (hidden with CSS)
+        }
+        </script>
+
+         <script>
+        function myFunction2(imgs) {
+          var expandImg2 = document.getElementById("expandedImg2"); // Get the expanded image
+          //var imgText = document.getElementById("imgtext"); // Get the image text
+          expandImg2.src = imgs.src; // Use the same src in the expanded image as the image being clicked on from the grid
+          // imgText.innerHTML = imgs.alt; // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          expandImg2.parentElement.style.display = "block";// Show the container element (hidden with CSS)
+        }
+        </script>
+    </head>
+
+<!-- Top/Expanding Navigation Bar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Home Button -->
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="travel.html"><i class="fas fa-plane"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="coding.html"><i class="fas fa-code"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="music.html"><i class="fas fa-music"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Main Section -->
+    <main class="petcare-main">
+      <h2>PET CARE</h2>
+      <div id="page-description1" class="page-description1">
+        <p class="petcare-description">Growing up, I desperately wanted a dog. In a house filled with allergy-ridden family members, though, I knew early on that it was never going to happen. I vowed that when I grew up and lived on my own, I would have as many pets as I wanted!</p>
+        <p class="petcare-description">My parents still did their best to bring pets into our family, given the restrictions. Over the years, we had dozens of fish, some hermit crabs and even two hooded rats (not at the same time, of course).   There was even a winter break during elementary school, in which our classroom hamster came to stay in my house while school was closed.</p>
+        <p class="petcare-description">I got my fill of "real pets" when I would visit friends and family, but it was never enough.</p>
+        <p class="petcare-description">In college, I knew I wasn't ready to take on the responsibility of a dog fulltime, but that didn't stop me from taking in a friend's Beagle puppy for a couple of weeks after her landlord evicted the pup. That was only temporary until she found a new home for him, although I hoped that it would take a long time. It didn't.</p>
+        <p class="petcare-description">Not too long after college, I met my wife, Jessica. To my delight, she grew up with REAL pets her entire life, and at the time had 2 dogs and a cat. There are countless reasons why I fell in love with Jessica, but the animals definitely helped!</p>
+        <p class="petcare-description">While we were dating, Jessica adopted two more cats (Ava + Tila). When Bailey, one of her family's Irish Setters, became a Grand Champion in the AKC, he became a desirable "stud", if you know what I mean! Before long, Bailey was a father and one of the pups from the litter (Sonny) came to live with Jessica's family.</p>
+        <p class="petcare-description">Most weekends, I would visit Jess, her family and all the fur kids. She would also bring Ava + Tila to come visit me. It wasn't the same as having my own pets, but it was about as close as I could get without taking that plunge.</p>
+        <p class="petcare-description">After Jess and I got engaged, we moved in together. Not only did I get to now live with the love of my life, but Ava + Tila joined us! I was officially a pet dad! Less than a year later, Sonny followed his cat sisters and came to live with us as well. What a dream!</p>
+        <p class="petcare-description">It's been more than 10 years now, and Sonny and Tila are still filling our lives with joy on a daily basis. Our sweet girl Ava crossed the rainbow bridge at the beginning of 2021. We miss so much about her, but are forever grateful for the time we had with her.</p>
+      </div>
+      <div id="button-container">
+        <button id="petcare-expand" class="petcare-expand" onclick="expand()">Read more...</button>
+        <button id="petcare-contract" class="petcare-expand" onclick="contract()">Close</button>
+      </div>
+
+      <!-- Tabbed Photo Gallery -->
+      <!-- The grid: five columns -->
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941242-2b7ff281-5350-4400-8155-2b06f9e1c4f1.jpg alt="Sonny the Irish Setter, as a puppy laying on Jessica's chest" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941234-dd835a86-54a7-4a30-b8bb-d1567eb07574.JPG alt="From the side, cats Ava and Tila cuddled together in a round cat bed" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941249-873c0e79-82a3-49e4-86cd-e08fc3eb736b.jpg alt="Wide angle of Sonny the Irish Setter, posing in front of a wall with graffiti that says 'Own Your Magic'" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941226-7e137ff3-1b65-4974-ba2f-5be54bf02999.JPG alt="Close-up of Ava the cat, laying on Josh and Jessica's bed" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941244-0bb6d7ce-3493-4ec9-9377-fcfd7403213f.JPG alt="Sonny the Irish Setter and Ava, the cat, laying together on Sonny's dog bed" onclick="myFunction(this);">
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941237-111603f2-e32c-457b-84e7-8fedc54eeac9.jpg alt="Josh, Jessica and Sonny the Irish Setter, posing in front of their Christmas tree" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941248-f30c7af7-92c2-4c7d-9e47-cbc846c75a37.jpg alt="Close-up of Sonny the Irish Setter, wearing sunglasses on top of his head" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941233-378ccfe7-c599-422e-8cc7-2806273f61bf.JPG alt="Sonny the Irish Setter, from the edge of the cliff in Jersey City Heights. Downtown NYC in the background" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941232-2092421a-cffa-470d-b9ba-1cbc3f75658a.JPG alt="Jessica, Sonny the Irish Setter, and Tila the cat all laying together in bed" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941230-e7f2995f-ee99-497b-a858-a4d9e695a0d9.JPG alt="Selfie of Josh and Sonny the Irish Setter in a snowy park. Both are bundled up in winter coats" onclick="myFunction(this);">
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941224-29f22e78-6bb2-4c88-9786-7a8060c28001.JPG alt="Tila the cat laying on the dining table, next to a vase with pink peonies" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941246-df549f2d-fdc8-4edd-acba-3c63642285a6.jpg alt="Selfie of Josh and Sonny the Irish Setter" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941235-3fb89eb1-a80f-49e3-9b5c-595042717837.JPG alt="From above, cats Ava and Tila cuddled together in a round cat bed" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941240-74adfd1f-52ea-4c49-a6be-1d0942ede5fb.jpg alt="Sonny the Irish Setter, resting his chin on the backseat headrest in the car" onclick="myFunction(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/128941227-3bea66a4-1ca1-4b5f-9d14-3783ad121a92.JPG alt="Selfie of Josh and Tila the cat, laying together on the couch" onclick="myFunction(this);">
+        </div>
+      </div>
+
+      <!-- The expanding image container -->
+      <div class="gallery-container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn outline">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+      </div>
+
+      <div id="page-description2" class="page-description2">
+        <p class="petcare-description">For someone who grew up without pets, but always wanted them, you'd think I'd be satisfied with my adulthood fur family. Well, not only did we have our pets, but we decided to make our passion into our profession.</p>
+        <p class="petcare-description">It started first with Jessica, but after founding and growing a pet care company on her own for 2.5 years, I left my career in advertising and joined her over five years ago. Through Gold Coast Pet Care, our extended fur family is now in the hundreds!</p>
+        <p class="petcare-description">I guess I kept my promise to my childhood self!</p>
+      </div>
+
+       <!-- Tabbed Photo Gallery -->
+      <!-- The grid: five columns -->
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120256-9004185b-056d-4619-85ba-9504f85f5c40.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120255-e463caef-7c71-44ca-9558-8c0e87df0456.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120254-d09d5005-9206-4a14-999f-4f0f8fcee2ae.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+         <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120251-024848b5-9c63-4a00-973a-c48f8a126ee6.JPG alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120253-d14ca596-7f37-4282-ac10-ba9df93de152.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120249-462afe31-1c80-4c29-80c2-cd8068e17c66.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120246-5e8e55af-525a-4e3a-aba1-41a2ac73f05b.JPG alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120245-752773cd-68e2-4e1d-b663-3e93ca2ab137.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120243-7e2f8aab-51cc-41eb-9bf9-29dd818777bb.jpg alt="..." onclick="myFunction2(this);">
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120242-df7918f0-fbca-46fb-8e8e-7b73dd2dab54.JPG alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120240-4312ba3c-7c04-400a-b73a-ab9f990b4e26.JPEG alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120239-b6817628-0921-485a-8eb6-6e8b585f65d8.JPG alt="..." onclick="myFunction2(this);">
+        </div>
+        <div class="gallery-column">
+          <img src=https://user-images.githubusercontent.com/78568826/129120237-87bc45b0-8dba-4c56-897f-4df298130835.JPG alt="..." onclick="myFunction2(this);">
+        </div>
+      </div>
+
+      <!-- The expanding image container -->
+      <div class="gallery-container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn outline">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg2" style="width:100%">
+      </div>
+    </main>
+
+
+  <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:joshua.klein1@gmail.com" target="_blank">JOSHUA.KLEIN1@GMAIL.COM
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io/champ98nyy" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/champ98nyy" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a id="profile-link" class="social-list__link" href="https://github.com/champ98nyy" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://dribble.com/champ98nyy" target="_blank">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+</html>
+
+
+<!--
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941242-2b7ff281-5350-4400-8155-2b06f9e1c4f1.jpg alt="Sonny the Irish Setter, as a puppy laying on Jessica's chest">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941234-dd835a86-54a7-4a30-b8bb-d1567eb07574.JPG alt="From the side, cats Ava and Tila cuddled together in a round cat bed">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941251-931677a5-f4f7-4c3e-95e9-1448d69440eb.jpg alt="Close-up of Sonny the Irish Setter, posing in front of a wall with graffiti">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941226-7e137ff3-1b65-4974-ba2f-5be54bf02999.JPG alt="Close-up of Ava the cat, laying on Josh and Jessica's bed">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941237-111603f2-e32c-457b-84e7-8fedc54eeac9.jpg alt="Josh, Jessica and Sonny the Irish Setter, posing in front of their Christmas tree">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941244-0bb6d7ce-3493-4ec9-9377-fcfd7403213f.JPG alt="Sonny the Irish Setter and Ava, the cat, laying together on Sonny's dog bed">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941248-f30c7af7-92c2-4c7d-9e47-cbc846c75a37.jpg alt="Close-up of Sonny the Irish Setter, wearing sunglasses on top of his head">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941233-378ccfe7-c599-422e-8cc7-2806273f61bf.JPG alt="Sonny the Irish Setter, from the edge of the cliff in Jersey City Heights. Downtown NYC in the background">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941232-2092421a-cffa-470d-b9ba-1cbc3f75658a.JPG alt="Jessica, Sonny the Irish Setter, and Tila the cat all laying together in bed">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941230-e7f2995f-ee99-497b-a858-a4d9e695a0d9.JPG alt="Selfie of Josh and Sonny the Irish Setter in a snowy park. Both are bundled up in winter coats">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941224-29f22e78-6bb2-4c88-9786-7a8060c28001.JPG alt="Tila the cat laying on the dining table, next to a vase with pink peonies">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941246-df549f2d-fdc8-4edd-acba-3c63642285a6.jpg alt="Selfie of Josh and Sonny the Irish Setter">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941235-3fb89eb1-a80f-49e3-9b5c-595042717837.JPG alt="From above, cats Ava and Tila cuddled together in a round cat bed">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941236-8697703e-2ab8-4c44-ae7a-274356b8a6de.jpg alt="Close-up of Sonny the Irish Setter, on the Hoboken waterfront">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941240-74adfd1f-52ea-4c49-a6be-1d0942ede5fb.jpg alt="Sonny the Irish Setter, resting his chin on the backseat headrest in the car">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941227-3bea66a4-1ca1-4b5f-9d14-3783ad121a92.JPG alt="Selfie of Josh and Tila the cat, laying together on the couch">
+<img class="img-responsive" src=https://user-images.githubusercontent.com/78568826/128941249-873c0e79-82a3-49e4-86cd-e08fc3eb736b.jpg alt="Wide angle of Sonny the Irish Setter, posing in front of a wall with graffiti that says 'Own Your Magic'">
+-->
